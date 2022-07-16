@@ -5,17 +5,19 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 	line-height: 1.4;
+    background-color: #F3F4F6;
 }
 .tabs {
     width: 960px;
     max-width: 100%;
+    padding: 20px;
 	margin: 0 auto;
 }
 .tabs-container {
     max-width: 100%;
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .25);
 }
 .tab-title {
     width: 100%;
@@ -45,8 +47,6 @@ body {
 .tab-title:after {
     content: "+";
     display: block;
-    /* width: 100%;
-    height: 3px; */
     font-size: 1.5rem;
     color: #2B9799;
     position: absolute;
@@ -58,6 +58,7 @@ body {
 .tab-content {
 	display: none;
 	padding: 16px;
+    background: #fff;
 }
 
 .tab-title.active {
@@ -79,6 +80,9 @@ body {
         max-width: 100%;
         order: 1;
         flex-grow: 1;
+    }
+    .tab-title:after {
+        display: none;
     }
     .tab-content {
         order: 99;
