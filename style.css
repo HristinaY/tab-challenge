@@ -43,10 +43,10 @@ body {
 }
 @media (min-width: 768px) {
 	.tab-title {
-        /* width: auto; */
         width: min(5rem, max(20rem, 100%));
         max-width: 100%;
         order: 1;
+        flex-grow: 1;
     }
     .tab-content {
         order: 99;
